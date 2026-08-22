@@ -1,0 +1,56 @@
+2026-05-19 12:32:41,374 | Val proteins (60): ['5F66', '6BQA', '5D14', '4HDP', '4J74', '1NPI', '8F85', '4DUI', '5O7U', '2ZVX', '7IJT', '7AVP', '4C9X', '4WGZ', '9VYU', '4XPY', '7G01', '2X46', '7H16', '2EWU', '7LF3', '7HLT', '7NZC', '2RHF', '3RJ6', '8CHR', '7W70', '8I1F', '4NI6', '3OHE', '8WT3', '5QI7', '4RXN', '6JK4', '2VI1', '4L9D', '7CSN', '5XQP', '4NYQ', '7FX1', '3B5M', '7X44', '3I6O', '9PIS', '8ONB', '5B5F', '1T3R', '6AIQ', '5BTY', '7ZAA', '2O9S', '1CZB', '3U8I', '8CRK', '7H0O', '5SV5', '1L3K', '3ZQX', '7FYP', '6XVM']
+2026-05-19 12:32:41,530 | Loaded 60 distogram files
+2026-05-19 12:33:53,305 | Wrote /home/williamklett/psa/runs/signed_vs_psd_compression.json
+2026-05-19 12:33:53,305 | 
+Rank 3:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.823 psd_pos=0.799 psd_flip=0.804 adv_flip=-0.019
+2026-05-19 12:33:53,305 |   b09 q=61.4 signed=0.851 psd_pos=0.827 psd_flip=0.830 adv_flip=-0.021
+2026-05-19 12:33:53,305 |   b15 q=54.5 signed=0.887 psd_pos=0.875 psd_flip=0.877 adv_flip=-0.010
+2026-05-19 12:33:53,305 |   b20 q=44.7 signed=0.776 psd_pos=0.776 psd_flip=0.776 adv_flip=0.000
+2026-05-19 12:33:53,305 |   b25 q=54.8 signed=0.807 psd_pos=0.676 psd_flip=0.712 adv_flip=-0.095
+2026-05-19 12:33:53,305 |   b30 q=56.5 signed=0.593 psd_pos=0.590 psd_flip=0.592 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b35 q=55.4 signed=0.556 psd_pos=0.554 psd_flip=0.555 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b40 q=45.6 signed=0.402 psd_pos=0.399 psd_flip=0.401 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b43 q=23.8 signed=0.335 psd_pos=0.335 psd_flip=0.335 adv_flip=0.000
+2026-05-19 12:33:53,305 |   b47 q=23.3 signed=0.342 psd_pos=0.342 psd_flip=0.342 adv_flip=0.000
+2026-05-19 12:33:53,305 |   corr(q_eff, signed advantage over psd_flip): r=-0.295 p=0.042
+2026-05-19 12:33:53,305 | 
+Rank 8:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.723 psd_pos=0.602 psd_flip=0.636 adv_flip=-0.086
+2026-05-19 12:33:53,305 |   b09 q=61.4 signed=0.757 psd_pos=0.641 psd_flip=0.669 adv_flip=-0.088
+2026-05-19 12:33:53,305 |   b15 q=54.5 signed=0.797 psd_pos=0.732 psd_flip=0.742 adv_flip=-0.056
+2026-05-19 12:33:53,305 |   b20 q=44.7 signed=0.569 psd_pos=0.567 psd_flip=0.569 adv_flip=-0.000
+2026-05-19 12:33:53,305 |   b25 q=54.8 signed=0.633 psd_pos=0.519 psd_flip=0.666 adv_flip=0.033
+2026-05-19 12:33:53,305 |   b30 q=56.5 signed=0.502 psd_pos=0.626 psd_flip=0.705 adv_flip=0.203
+2026-05-19 12:33:53,305 |   b35 q=55.4 signed=0.505 psd_pos=0.636 psd_flip=0.710 adv_flip=0.204
+2026-05-19 12:33:53,305 |   b40 q=45.6 signed=0.253 psd_pos=0.364 psd_flip=0.432 adv_flip=0.179
+2026-05-19 12:33:53,305 |   b43 q=23.8 signed=0.087 psd_pos=0.105 psd_flip=0.123 adv_flip=0.036
+2026-05-19 12:33:53,305 |   b47 q=23.3 signed=0.088 psd_pos=0.097 psd_flip=0.107 adv_flip=0.020
+2026-05-19 12:33:53,305 |   corr(q_eff, signed advantage over psd_flip): r=+0.024 p=0.87
+2026-05-19 12:33:53,305 | 
+Rank 16:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.700 psd_pos=0.435 psd_flip=0.557 adv_flip=-0.143
+2026-05-19 12:33:53,306 |   b09 q=61.4 signed=0.725 psd_pos=0.468 psd_flip=0.567 adv_flip=-0.157
+2026-05-19 12:33:53,306 |   b15 q=54.5 signed=0.749 psd_pos=0.580 psd_flip=0.607 adv_flip=-0.142
+2026-05-19 12:33:53,306 |   b20 q=44.7 signed=0.378 psd_pos=0.380 psd_flip=0.404 adv_flip=0.026
+2026-05-19 12:33:53,306 |   b25 q=54.8 signed=0.420 psd_pos=0.800 psd_flip=1.074 adv_flip=0.654
+2026-05-19 12:33:53,306 |   b30 q=56.5 signed=0.408 psd_pos=1.050 psd_flip=1.334 adv_flip=0.927
+2026-05-19 12:33:53,306 |   b35 q=55.4 signed=0.408 psd_pos=1.058 psd_flip=1.317 adv_flip=0.909
+2026-05-19 12:33:53,306 |   b40 q=45.6 signed=0.194 psd_pos=0.606 psd_flip=0.835 adv_flip=0.641
+2026-05-19 12:33:53,306 |   b43 q=23.8 signed=0.057 psd_pos=0.150 psd_flip=0.212 adv_flip=0.155
+2026-05-19 12:33:53,306 |   b47 q=23.3 signed=0.051 psd_pos=0.129 psd_flip=0.182 adv_flip=0.131
+2026-05-19 12:33:53,306 |   corr(q_eff, signed advantage over psd_flip): r=+0.116 p=0.43
+2026-05-19 12:33:53,306 | 
+Rank 32:
+2026-05-19 12:33:53,306 |   b05 q=66.9 signed=0.772 psd_pos=0.362 psd_flip=0.701 adv_flip=-0.071
+2026-05-19 12:33:53,306 |   b09 q=61.4 signed=0.767 psd_pos=0.359 psd_flip=0.637 adv_flip=-0.129
+2026-05-19 12:33:53,306 |   b15 q=54.5 signed=0.734 psd_pos=0.420 psd_flip=0.502 adv_flip=-0.232
+2026-05-19 12:33:53,306 |   b20 q=44.7 signed=0.220 psd_pos=0.334 psd_flip=0.455 adv_flip=0.235
+2026-05-19 12:33:53,306 |   b25 q=54.8 signed=0.297 psd_pos=1.340 psd_flip=1.882 adv_flip=1.585
+2026-05-19 12:33:53,306 |   b30 q=56.5 signed=0.256 psd_pos=1.517 psd_flip=2.161 adv_flip=1.906
+2026-05-19 12:33:53,306 |   b35 q=55.4 signed=0.260 psd_pos=1.529 psd_flip=2.174 adv_flip=1.914
+2026-05-19 12:33:53,306 |   b40 q=45.6 signed=0.115 psd_pos=0.767 psd_flip=1.251 adv_flip=1.136
+2026-05-19 12:33:53,306 |   b43 q=23.8 signed=0.035 psd_pos=0.199 psd_flip=0.324 adv_flip=0.289
+2026-05-19 12:33:53,306 |   b47 q=23.3 signed=0.033 psd_pos=0.174 psd_flip=0.284 adv_flip=0.252
+2026-05-19 12:33:53,306 |   corr(q_eff, signed advantage over psd_flip): r=+0.173 p=0.24
+2026-05-19 12:33:54,961 | saved /home/williamklett/psa/runs/signed_vs_psd_compression.png

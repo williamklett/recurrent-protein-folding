@@ -1,0 +1,9 @@
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa: run_replication_resume_stage5.sh
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs: replication_autoshutdown_stage5.log
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs: replication_autoshutdown_stage5.pid
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs: replication_autoshutdown_stage5.txt
+Files /mnt/recovery/psa-repl/home/williamklett/psa/runs/replication_logs/05_signature_projection_grid.log and /mnt/recovery/psa-ondemand/home/williamklett/psa/runs/replication_logs/05_signature_projection_grid.log differ
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs/replication_logs: 06_adapter_capacity_sweep.log
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs: replication_suite_stage5.log
+Only in /mnt/recovery/psa-ondemand/home/williamklett/psa/runs: replication_suite_stage5.pid
+Files /mnt/recovery/psa-repl/home/williamklett/psa/runs/signature_projection_grid_n300.json and /mnt/recovery/psa-ondemand/home/williamklett/psa/runs/signature_projection_grid_n300.json differ

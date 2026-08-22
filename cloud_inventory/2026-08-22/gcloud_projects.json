@@ -1,0 +1,27 @@
+[
+  {
+    "createTime": "2026-05-07T12:53:18.652Z",
+    "lifecycleState": "ACTIVE",
+    "name": "My First Project",
+    "parent": {
+      "id": "684309936739",
+      "type": "organization"
+    },
+    "projectId": "project-5be756f5-462b-4a49-acc",
+    "projectNumber": "538867524375"
+  },
+  {
+    "createTime": "2025-11-19T01:59:43.459976Z",
+    "lifecycleState": "ACTIVE",
+    "name": "Default Gemini Project",
+    "projectId": "gen-lang-client-0288653179",
+    "projectNumber": "814893810052"
+  },
+  {
+    "createTime": "2023-11-23T03:11:52.544052Z",
+    "lifecycleState": "ACTIVE",
+    "name": "My First Project",
+    "projectId": "rugged-weaver-406003",
+    "projectNumber": "131861317600"
+  }
+]

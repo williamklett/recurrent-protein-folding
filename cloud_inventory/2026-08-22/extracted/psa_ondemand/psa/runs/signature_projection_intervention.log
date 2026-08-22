@@ -1,0 +1,72 @@
+2026-05-19 01:24:35,654 | Val proteins (10): ['1LYZ', '1FYN', '1CSP', '1TIT', '1AKI', '2A3D', '1LMB', '1PGB', '1L2Y', '1FAS']
+2026-05-19 01:24:35,687 | Loading ESMFold...
+2026-05-19 01:24:35,824 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 01:24:35,824 | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 01:24:35,840 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 01:24:35,940 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 01:24:35,957 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,010 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-19 01:24:36,067 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,129 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 01:24:36,146 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,237 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-19 01:24:36,287 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 01:24:36,333 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-05-19 01:24:36,385 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-19 01:24:36,459 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1 "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,529 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/main "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,595 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,657 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/refs%2Fpr%2F6 "HTTP/1.1 200 OK"
+2026-05-19 01:24:36,709 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 01:24:36,763 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:25<1:47:05,  1.43s/it]Loading weights:  13%|█▎        | 566/4498 [00:26<02:10, 30.17it/s] Loading weights:  15%|█▍        | 674/4498 [00:26<01:42, 37.30it/s]Loading weights:  68%|██████▊   | 3055/4498 [00:26<00:05, 287.77it/s]Loading weights: 100%|██████████| 4498/4498 [00:26<00:00, 167.24it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.weight | MISSING | 
+esm.contact_head.regression.bias   | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2026-05-19 01:25:25,082 | Loaded in 49.4s
+2026-05-19 01:25:25,082 | 
+== baseline ==
+2026-05-19 01:25:41,744 |   summary | MAE=0.533 Å pLDDT=0.778 n=10
+2026-05-19 01:25:41,744 | 
+== signed_abs_block9_rank16 ==
+2026-05-19 01:26:02,961 |   summary | MAE=2.957 Å pLDDT=0.403 n=10
+2026-05-19 01:26:02,961 | 
+== psd_abs_flip_block9_rank16 ==
+2026-05-19 01:26:23,891 |   summary | MAE=10.811 Å pLDDT=0.308 n=10
+2026-05-19 01:26:23,891 | 
+== psd_pos_block9_rank16 ==
+2026-05-19 01:26:44,942 |   summary | MAE=8.108 Å pLDDT=0.280 n=10
+2026-05-19 01:26:44,942 | 
+== signed_abs_block25_rank16 ==
+2026-05-19 01:27:05,807 |   summary | MAE=3.233 Å pLDDT=0.323 n=10
+2026-05-19 01:27:05,808 | 
+== psd_abs_flip_block25_rank16 ==
+2026-05-19 01:27:26,692 |   summary | MAE=12.095 Å pLDDT=0.378 n=10
+2026-05-19 01:27:26,692 | 
+== psd_pos_block25_rank16 ==
+2026-05-19 01:27:47,458 |   summary | MAE=7.849 Å pLDDT=0.314 n=10
+2026-05-19 01:27:47,459 | 
+== signed_abs_block35_rank16 ==
+2026-05-19 01:28:08,219 |   summary | MAE=1.142 Å pLDDT=0.528 n=10
+2026-05-19 01:28:08,219 | 
+== psd_abs_flip_block35_rank16 ==
+2026-05-19 01:28:29,053 |   summary | MAE=12.064 Å pLDDT=0.475 n=10
+2026-05-19 01:28:29,053 | 
+== psd_pos_block35_rank16 ==
+2026-05-19 01:28:49,826 |   summary | MAE=7.847 Å pLDDT=0.386 n=10
+2026-05-19 01:28:49,826 | 
+== signed_abs_block43_rank16 ==
+2026-05-19 01:29:10,657 |   summary | MAE=1.132 Å pLDDT=0.557 n=10
+2026-05-19 01:29:10,657 | 
+== psd_abs_flip_block43_rank16 ==
+2026-05-19 01:29:31,466 |   summary | MAE=9.417 Å pLDDT=0.297 n=10
+2026-05-19 01:29:31,466 | 
+== psd_pos_block43_rank16 ==
+2026-05-19 01:29:52,307 |   summary | MAE=3.712 Å pLDDT=0.451 n=10
+2026-05-19 01:29:52,309 | Wrote /home/williamklett/psa/runs/signature_projection_intervention.json with 130 rows

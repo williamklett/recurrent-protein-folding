@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading model...
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:17<1:10:33,  1.06it/s]Loading weights:   0%|          | 19/4498 [00:17<1:07:23,  1.11it/s]Loading weights:  13%|█▎        | 582/4498 [00:17<01:01, 64.12it/s] Loading weights:  65%|██████▍   | 2915/4498 [00:17<00:03, 430.53it/s]Loading weights: 100%|██████████| 4498/4498 [00:17<00:00, 251.32it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.bias   | MISSING | 
+esm.contact_head.regression.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.

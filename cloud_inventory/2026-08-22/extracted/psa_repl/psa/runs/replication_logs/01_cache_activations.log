@@ -1,0 +1,332 @@
+2026-05-19 02:15:34,813 | Manifest: 300 proteins
+2026-05-19 02:15:34,813 | Loading ESMFold v1…
+2026-05-19 02:15:34,964 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 02:15:34,981 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,078 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 02:15:35,095 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,144 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-19 02:15:35,196 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,259 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 02:15:35,276 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,367 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 02:15:35,368 | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 02:15:35,417 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 02:15:35,469 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-05-19 02:15:35,516 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-19 02:15:35,569 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1 "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,631 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/main "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,700 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,764 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/refs%2Fpr%2F6 "HTTP/1.1 200 OK"
+2026-05-19 02:15:35,809 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 02:15:35,858 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:25<1:46:59,  1.43s/it]Loading weights:  13%|█▎        | 566/4498 [00:26<02:10, 30.20it/s] Loading weights:  15%|█▍        | 674/4498 [00:26<01:42, 37.33it/s]Loading weights:  69%|██████▊   | 3088/4498 [00:26<00:04, 291.47it/s]Loading weights: 100%|██████████| 4498/4498 [00:26<00:00, 167.40it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.bias   | MISSING | 
+esm.contact_head.regression.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2026-05-19 02:16:24,131 | Model loaded in 49.3s
+2026-05-19 02:16:30,486 | 8FMI  L=170   fold=6.3s  peak=14.3GB  size=371.8MB
+2026-05-19 02:16:32,526 | 6UMU  L=112   fold=1.9s  peak=8.7GB  size=165.2MB
+2026-05-19 02:16:33,985 | 7X44  L=37    fold=1.5s  peak=8.6GB  size=20.5MB
+2026-05-19 02:16:35,530 | 5D14  L=70    fold=1.5s  peak=8.6GB  size=67.1MB
+2026-05-19 02:16:41,358 | 2RK3  L=187   fold=5.8s  peak=8.9GB  size=448.1MB
+2026-05-19 02:16:45,312 | 7FQ2  L=159   fold=3.9s  peak=8.9GB  size=326.3MB
+2026-05-19 02:16:48,375 | 7I3E  L=140   fold=3.1s  peak=8.8GB  size=254.6MB
+2026-05-19 02:16:52,424 | 6SZX  L=161   fold=4.0s  peak=8.8GB  size=334.3MB
+2026-05-19 02:16:55,204 | 4QYN  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:16:59,562 | 7IK2  L=166   fold=4.4s  peak=8.9GB  size=354.9MB
+2026-05-19 02:17:01,561 | 6B1K  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:17:04,994 | 3NBD  L=148   fold=3.4s  peak=8.8GB  size=283.7MB
+2026-05-19 02:17:11,210 | 4B5O  L=192   fold=6.2s  peak=9.0GB  size=471.9MB
+2026-05-19 02:17:14,405 | 2X46  L=144   fold=3.2s  peak=8.8GB  size=269.0MB
+2026-05-19 02:17:17,022 | 7ZAA  L=129   fold=2.6s  peak=8.7GB  size=217.2MB
+2026-05-19 02:17:18,788 | 2HS1  L=99    fold=1.8s  peak=8.6GB  size=130.2MB
+2026-05-19 02:17:21,576 | 7WPG  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:17:23,549 | 5NCG  L=113   fold=2.0s  peak=8.7GB  size=168.0MB
+2026-05-19 02:17:25,410 | 9MT0  L=107   fold=1.9s  peak=8.7GB  size=151.2MB
+2026-05-19 02:17:28,226 | 7FXK  L=134   fold=2.8s  peak=8.7GB  size=233.8MB
+2026-05-19 02:17:31,228 | 8RRB  L=138   fold=3.0s  peak=8.8GB  size=247.6MB
+2026-05-19 02:17:36,227 | 2V2P  L=170   fold=5.0s  peak=8.9GB  size=371.8MB
+2026-05-19 02:17:40,605 | 5S3X  L=165   fold=4.4s  peak=8.9GB  size=350.8MB
+2026-05-19 02:17:45,074 | 7IJ8  L=167   fold=4.5s  peak=8.9GB  size=359.1MB
+2026-05-19 02:17:47,225 | 5S90  L=119   fold=2.1s  peak=8.7GB  size=185.7MB
+2026-05-19 02:17:49,674 | 6TX8  L=128   fold=2.4s  peak=8.7GB  size=213.9MB
+2026-05-19 02:17:56,238 | 3MCW  L=195   fold=6.6s  peak=9.0GB  size=486.4MB
+2026-05-19 02:18:00,423 | 4ZVE  L=161   fold=4.2s  peak=8.9GB  size=334.3MB
+2026-05-19 02:18:02,058 | 6AIQ  L=83    fold=1.6s  peak=8.6GB  size=92.8MB
+2026-05-19 02:18:07,155 | 2R16  L=175   fold=5.1s  peak=8.9GB  size=393.5MB
+2026-05-19 02:18:11,666 | 5DGJ  L=168   fold=4.5s  peak=8.9GB  size=363.3MB
+2026-05-19 02:18:13,402 | 3LAG  L=96    fold=1.7s  peak=8.7GB  size=122.7MB
+2026-05-19 02:18:19,168 | 6FJN  L=184   fold=5.8s  peak=8.9GB  size=434.1MB
+2026-05-19 02:18:20,673 | 7O76  L=40    fold=1.5s  peak=8.6GB  size=23.6MB
+2026-05-19 02:18:22,449 | 4HDP  L=99    fold=1.8s  peak=8.6GB  size=130.2MB
+2026-05-19 02:18:29,932 | 7LJW  L=207   fold=7.5s  peak=9.1GB  size=546.9MB
+2026-05-19 02:18:32,144 | 7FVA  L=121   fold=2.2s  peak=8.7GB  size=191.8MB
+2026-05-19 02:18:34,250 | 5WSD  L=118   fold=2.1s  peak=8.7GB  size=182.7MB
+2026-05-19 02:18:41,677 | 5YYR  L=207   fold=7.4s  peak=9.1GB  size=546.9MB
+2026-05-19 02:18:47,274 | 2AT5  L=184   fold=5.6s  peak=9.0GB  size=434.1MB
+2026-05-19 02:18:50,210 | 5BTY  L=135   fold=2.9s  peak=8.8GB  size=237.2MB
+2026-05-19 02:18:53,060 | 7FYP  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:18:54,787 | 4NDT  L=94    fold=1.7s  peak=8.6GB  size=117.8MB
+2026-05-19 02:18:57,637 | 7G0Z  L=134   fold=2.8s  peak=8.7GB  size=233.8MB
+2026-05-19 02:19:00,309 | 3WL2  L=129   fold=2.7s  peak=8.7GB  size=217.2MB
+2026-05-19 02:19:02,383 | 4HIQ  L=116   fold=2.1s  peak=8.7GB  size=176.8MB
+2026-05-19 02:19:04,834 | 8CHR  L=128   fold=2.4s  peak=8.7GB  size=213.9MB
+2026-05-19 02:19:06,372 | 5NVJ  L=60    fold=1.5s  peak=8.6GB  size=50.1MB
+2026-05-19 02:19:10,939 | 7TWY  L=168   fold=4.6s  peak=8.8GB  size=363.3MB
+2026-05-19 02:19:13,051 | 2BV4  L=113   fold=2.1s  peak=8.7GB  size=168.0MB
+2026-05-19 02:19:15,385 | 3WZP  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:19:17,084 | 3DR0  L=93    fold=1.7s  peak=8.6GB  size=115.4MB
+2026-05-19 02:19:19,283 | 6SWI  L=121   fold=2.2s  peak=8.7GB  size=191.8MB
+2026-05-19 02:19:20,770 | 2A26  L=48    fold=1.5s  peak=8.6GB  size=33.0MB
+2026-05-19 02:19:22,567 | 6BQA  L=102   fold=1.8s  peak=8.6GB  size=137.9MB
+2026-05-19 02:19:27,216 | 6E7E  L=169   fold=4.6s  peak=8.9GB  size=367.6MB
+2026-05-19 02:19:28,954 | 5IWH  L=97    fold=1.7s  peak=8.7GB  size=125.2MB
+2026-05-19 02:19:30,574 | 5O7U  L=82    fold=1.6s  peak=8.6GB  size=90.7MB
+2026-05-19 02:19:32,704 | 3S0A  L=119   fold=2.1s  peak=8.7GB  size=185.7MB
+2026-05-19 02:19:39,811 | 3R2Q  L=202   fold=7.1s  peak=9.0GB  size=521.3MB
+2026-05-19 02:19:44,563 | 5J1N  L=171   fold=4.7s  peak=8.9GB  size=376.1MB
+2026-05-19 02:19:50,121 | 3Q46  L=178   fold=5.5s  peak=8.9GB  size=406.8MB
+2026-05-19 02:19:52,321 | 3RY2  L=121   fold=2.2s  peak=8.7GB  size=191.8MB
+2026-05-19 02:19:53,850 | 4RXN  L=54    fold=1.5s  peak=8.6GB  size=41.1MB
+2026-05-19 02:19:55,598 | 2QCI  L=99    fold=1.7s  peak=8.6GB  size=130.2MB
+2026-05-19 02:19:58,055 | 7RN2  L=127   fold=2.5s  peak=8.7GB  size=210.7MB
+2026-05-19 02:19:59,597 | 4PNO  L=64    fold=1.5s  peak=8.6GB  size=56.6MB
+2026-05-19 02:20:01,327 | 6QJL  L=98    fold=1.7s  peak=8.6GB  size=127.6MB
+2026-05-19 02:20:02,953 | 4L9D  L=82    fold=1.6s  peak=8.6GB  size=90.7MB
+2026-05-19 02:20:04,846 | 1BKR  L=108   fold=1.9s  peak=8.7GB  size=153.9MB
+2026-05-19 02:20:06,915 | 5DWP  L=116   fold=2.1s  peak=8.7GB  size=176.8MB
+2026-05-19 02:20:08,467 | 6T9Q  L=62    fold=1.5s  peak=8.6GB  size=53.3MB
+2026-05-19 02:20:10,534 | 3JVM  L=116   fold=2.1s  peak=8.7GB  size=176.8MB
+2026-05-19 02:20:12,245 | 6Q9O  L=94    fold=1.7s  peak=8.6GB  size=117.8MB
+2026-05-19 02:20:13,705 | 7X43  L=37    fold=1.5s  peak=8.6GB  size=20.5MB
+2026-05-19 02:20:15,669 | 7IRO  L=112   fold=2.0s  peak=8.6GB  size=165.2MB
+2026-05-19 02:20:20,998 | 6M8M  L=177   fold=5.3s  peak=8.9GB  size=402.4MB
+2026-05-19 02:20:23,177 | 9FXF  L=120   fold=2.2s  peak=8.7GB  size=188.7MB
+2026-05-19 02:20:28,628 | 5QI7  L=182   fold=5.4s  peak=8.9GB  size=424.9MB
+2026-05-19 02:20:30,288 | 7W70  L=87    fold=1.7s  peak=8.6GB  size=101.6MB
+2026-05-19 02:20:36,119 | 7HLT  L=185   fold=5.8s  peak=8.9GB  size=438.7MB
+2026-05-19 02:20:39,151 | 9QQ4  L=137   fold=3.0s  peak=8.8GB  size=244.1MB
+2026-05-19 02:20:40,734 | 7A3M  L=64    fold=1.6s  peak=8.6GB  size=56.6MB
+2026-05-19 02:20:47,569 | 5Y9Z  L=198   fold=6.8s  peak=9.0GB  size=501.2MB
+2026-05-19 02:20:50,660 | 7I61  L=139   fold=3.1s  peak=8.8GB  size=251.1MB
+2026-05-19 02:20:52,300 | 2ZPM  L=86    fold=1.6s  peak=8.6GB  size=99.3MB
+2026-05-19 02:20:58,293 | 9YCU  L=189   fold=6.0s  peak=9.0GB  size=457.5MB
+2026-05-19 02:21:04,089 | 5SY6  L=187   fold=5.8s  peak=9.0GB  size=448.1MB
+2026-05-19 02:21:05,638 | 2ZVX  L=58    fold=1.5s  peak=8.6GB  size=47.0MB
+2026-05-19 02:21:08,055 | 5HMV  L=128   fold=2.4s  peak=8.7GB  size=213.9MB
+2026-05-19 02:21:10,066 | 5WSF  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:21:13,270 | 4MTU  L=143   fold=3.2s  peak=8.8GB  size=265.3MB
+2026-05-19 02:21:15,422 | 5B5F  L=120   fold=2.1s  peak=8.7GB  size=188.7MB
+2026-05-19 02:21:16,869 | 1YRI  L=35    fold=1.4s  peak=8.6GB  size=18.5MB
+2026-05-19 02:21:18,541 | 6EEY  L=94    fold=1.7s  peak=8.6GB  size=117.8MB
+2026-05-19 02:21:22,752 | 9DJK  L=162   fold=4.2s  peak=8.8GB  size=338.4MB
+2026-05-19 02:21:28,226 | 7JJA  L=180   fold=5.5s  peak=8.9GB  size=415.8MB
+2026-05-19 02:21:31,223 | 9RQ6  L=137   fold=3.0s  peak=8.8GB  size=244.1MB
+2026-05-19 02:21:37,042 | 5HSR  L=186   fold=5.8s  peak=9.0GB  size=443.4MB
+2026-05-19 02:21:41,423 | 5F66  L=164   fold=4.4s  peak=8.9GB  size=346.6MB
+2026-05-19 02:21:44,082 | 5V92  L=129   fold=2.7s  peak=8.7GB  size=217.2MB
+2026-05-19 02:21:48,378 | 7IJT  L=164   fold=4.3s  peak=8.9GB  size=346.6MB
+2026-05-19 02:21:53,287 | 2WFI  L=172   fold=4.9s  peak=8.9GB  size=380.4MB
+2026-05-19 02:21:54,830 | 1NPI  L=61    fold=1.5s  peak=8.6GB  size=51.7MB
+2026-05-19 02:21:56,945 | 5R4L  L=119   fold=2.1s  peak=8.7GB  size=185.7MB
+2026-05-19 02:21:58,813 | 6YWI  L=108   fold=1.9s  peak=8.7GB  size=153.9MB
+2026-05-19 02:22:00,807 | 2IAY  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:22:04,567 | 2ZSP  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:22:06,667 | 3EY6  L=118   fold=2.1s  peak=8.7GB  size=182.7MB
+2026-05-19 02:22:08,536 | 2YYX  L=107   fold=1.9s  peak=8.7GB  size=151.2MB
+2026-05-19 02:22:10,285 | 3I6O  L=99    fold=1.7s  peak=8.6GB  size=130.2MB
+2026-05-19 02:22:12,397 | 9XS9  L=118   fold=2.1s  peak=8.7GB  size=182.7MB
+2026-05-19 02:22:16,156 | 3RJ6  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:22:17,869 | 1T2I  L=96    fold=1.7s  peak=8.6GB  size=122.7MB
+2026-05-19 02:22:21,964 | 6R3W  L=161   fold=4.1s  peak=8.8GB  size=334.3MB
+2026-05-19 02:22:23,884 | 6Q6T  L=110   fold=1.9s  peak=8.7GB  size=159.5MB
+2026-05-19 02:22:26,884 | 4NI6  L=138   fold=3.0s  peak=8.7GB  size=247.6MB
+2026-05-19 02:22:28,906 | 6ZNV  L=115   fold=2.0s  peak=8.7GB  size=173.8MB
+2026-05-19 02:22:33,344 | 7H0O  L=167   fold=4.4s  peak=8.9GB  size=359.1MB
+2026-05-19 02:22:37,104 | 2CAL  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:22:39,304 | 1TH6  L=121   fold=2.2s  peak=8.7GB  size=191.8MB
+2026-05-19 02:22:41,307 | 1SAU  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:22:47,207 | 9YGX  L=188   fold=5.9s  peak=9.0GB  size=452.8MB
+2026-05-19 02:22:51,505 | 6WE8  L=164   fold=4.3s  peak=8.9GB  size=346.6MB
+2026-05-19 02:22:56,919 | 5CMT  L=180   fold=5.4s  peak=8.9GB  size=415.8MB
+2026-05-19 02:23:04,298 | 5J2X  L=209   fold=7.4s  peak=9.1GB  size=557.3MB
+2026-05-19 02:23:08,344 | 4M5M  L=159   fold=4.0s  peak=8.9GB  size=326.3MB
+2026-05-19 02:23:09,952 | 2RHF  L=76    fold=1.6s  peak=8.6GB  size=78.4MB
+2026-05-19 02:23:12,927 | 5OAX  L=138   fold=3.0s  peak=8.7GB  size=247.6MB
+2026-05-19 02:23:14,913 | 7DT3  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:23:18,895 | 4MNS  L=159   fold=4.0s  peak=8.8GB  size=326.3MB
+2026-05-19 02:23:20,374 | 9PIS  L=46    fold=1.5s  peak=8.6GB  size=30.5MB
+2026-05-19 02:23:22,759 | 9TAS  L=126   fold=2.4s  peak=8.7GB  size=207.5MB
+2026-05-19 02:23:28,312 | 4O6Q  L=182   fold=5.5s  peak=8.9GB  size=424.9MB
+2026-05-19 02:23:30,729 | 8P9H  L=125   fold=2.4s  peak=8.7GB  size=204.3MB
+2026-05-19 02:23:38,033 | 1H4G  L=206   fold=7.3s  peak=9.1GB  size=541.7MB
+2026-05-19 02:23:39,578 | 7ZTF  L=57    fold=1.5s  peak=8.6GB  size=45.5MB
+2026-05-19 02:23:41,968 | 6JK4  L=126   fold=2.4s  peak=8.7GB  size=207.5MB
+2026-05-19 02:23:44,755 | 7FW5  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:23:50,780 | 2BBR  L=189   fold=6.0s  peak=9.0GB  size=457.5MB
+2026-05-19 02:23:52,291 | 2V9B  L=46    fold=1.5s  peak=8.6GB  size=30.5MB
+2026-05-19 02:23:54,029 | 1MWQ  L=100   fold=1.7s  peak=8.6GB  size=132.7MB
+2026-05-19 02:23:55,509 | 7LF3  L=52    fold=1.5s  peak=8.6GB  size=38.3MB
+2026-05-19 02:23:57,029 | 7NZC  L=61    fold=1.5s  peak=8.6GB  size=51.7MB
+2026-05-19 02:23:58,879 | 2PPN  L=107   fold=1.8s  peak=8.6GB  size=151.2MB
+2026-05-19 02:24:00,319 | 7X41  L=37    fold=1.4s  peak=8.6GB  size=20.5MB
+2026-05-19 02:24:03,502 | 7O8A  L=143   fold=3.2s  peak=8.7GB  size=265.3MB
+2026-05-19 02:24:08,655 | 3DZE  L=176   fold=5.1s  peak=8.9GB  size=397.9MB
+2026-05-19 02:24:10,432 | 2JLI  L=100   fold=1.8s  peak=8.7GB  size=132.7MB
+2026-05-19 02:24:18,652 | 7AVP  L=217   fold=8.2s  peak=9.1GB  size=600.0MB
+2026-05-19 02:24:20,980 | 3FSA  L=122   fold=2.3s  peak=8.7GB  size=194.9MB
+2026-05-19 02:24:23,796 | 7G01  L=134   fold=2.8s  peak=8.7GB  size=233.8MB
+2026-05-19 02:24:26,245 | 6F9Z  L=127   fold=2.4s  peak=8.7GB  size=210.7MB
+2026-05-19 02:24:27,804 | 6XVM  L=59    fold=1.6s  peak=8.6GB  size=48.6MB
+2026-05-19 02:24:31,679 | 3HNY  L=156   fold=3.9s  peak=8.8GB  size=314.4MB
+2026-05-19 02:24:33,835 | 6QYB  L=120   fold=2.1s  peak=8.7GB  size=188.7MB
+2026-05-19 02:24:35,991 | 7FVI  L=120   fold=2.2s  peak=8.7GB  size=188.7MB
+2026-05-19 02:24:38,714 | 4XPY  L=131   fold=2.7s  peak=8.7GB  size=223.8MB
+2026-05-19 02:24:43,556 | 7KQW  L=172   fold=4.8s  peak=8.9GB  size=380.4MB
+2026-05-19 02:24:46,312 | 5II8  L=131   fold=2.7s  peak=8.7GB  size=223.8MB
+2026-05-19 02:24:49,077 | 8GEW  L=132   fold=2.8s  peak=8.7GB  size=227.1MB
+2026-05-19 02:24:50,565 | 3A02  L=51    fold=1.5s  peak=8.6GB  size=37.0MB
+2026-05-19 02:24:54,357 | 1NAZ  L=154   fold=3.8s  peak=8.8GB  size=306.6MB
+2026-05-19 02:24:55,910 | 2O9S  L=67    fold=1.5s  peak=8.6GB  size=61.7MB
+2026-05-19 02:24:58,334 | 5ARM  L=127   fold=2.4s  peak=8.7GB  size=210.7MB
+2026-05-19 02:25:01,094 | 2OFZ  L=132   fold=2.8s  peak=8.7GB  size=227.1MB
+2026-05-19 02:25:03,409 | 5O5S  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:25:10,783 | 2VI1  L=207   fold=7.4s  peak=9.1GB  size=546.9MB
+2026-05-19 02:25:16,572 | 5X86  L=187   fold=5.8s  peak=9.0GB  size=448.1MB
+2026-05-19 02:25:21,582 | 2AUU  L=175   fold=5.0s  peak=8.9GB  size=393.5MB
+2026-05-19 02:25:23,192 | 1L0I  L=77    fold=1.6s  peak=8.6GB  size=80.4MB
+2026-05-19 02:25:26,301 | 7O4P  L=141   fold=3.1s  peak=8.7GB  size=258.2MB
+2026-05-19 02:25:30,061 | 3WJD  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:25:31,921 | 4JEA  L=106   fold=1.9s  peak=8.7GB  size=148.5MB
+2026-05-19 02:25:34,559 | 6D9I  L=129   fold=2.6s  peak=8.7GB  size=217.2MB
+2026-05-19 02:25:37,838 | 8J4V  L=145   fold=3.3s  peak=8.8GB  size=272.6MB
+2026-05-19 02:25:40,024 | 4Y59  L=121   fold=2.2s  peak=8.7GB  size=191.8MB
+2026-05-19 02:25:43,817 | 4C9X  L=154   fold=3.8s  peak=8.8GB  size=306.6MB
+2026-05-19 02:25:49,254 | 5EMI  L=180   fold=5.4s  peak=8.9GB  size=415.8MB
+2026-05-19 02:25:54,917 | 2ZK9  L=185   fold=5.7s  peak=9.0GB  size=438.7MB
+2026-05-19 02:26:00,846 | 4HK8  L=189   fold=5.9s  peak=9.0GB  size=457.5MB
+2026-05-19 02:26:02,946 | 8CRK  L=117   fold=2.1s  peak=8.7GB  size=179.7MB
+2026-05-19 02:26:07,204 | 4YUO  L=163   fold=4.3s  peak=8.8GB  size=342.5MB
+2026-05-19 02:26:10,963 | 8I1F  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:26:13,396 | 9QFY  L=128   fold=2.4s  peak=8.7GB  size=213.9MB
+2026-05-19 02:26:21,691 | 5MAE  L=217   fold=8.3s  peak=9.1GB  size=600.0MB
+2026-05-19 02:26:27,781 | 6BXD  L=192   fold=6.1s  peak=9.0GB  size=471.9MB
+2026-05-19 02:26:32,411 | 7H16  L=169   fold=4.6s  peak=8.9GB  size=367.6MB
+2026-05-19 02:26:33,970 | 2PL7  L=67    fold=1.6s  peak=8.6GB  size=61.7MB
+2026-05-19 02:26:37,085 | 28VW  L=141   fold=3.1s  peak=8.7GB  size=258.2MB
+2026-05-19 02:26:39,400 | 3U8I  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:26:41,239 | 1V8H  L=106   fold=1.8s  peak=8.7GB  size=148.5MB
+2026-05-19 02:26:47,730 | 3ESD  L=195   fold=6.5s  peak=9.0GB  size=486.4MB
+2026-05-19 02:26:54,372 | 3URD  L=198   fold=6.6s  peak=9.1GB  size=501.2MB
+2026-05-19 02:26:56,280 | 6GDX  L=107   fold=1.9s  peak=8.7GB  size=151.2MB
+2026-05-19 02:27:00,222 | 4X5P  L=158   fold=3.9s  peak=8.8GB  size=322.3MB
+2026-05-19 02:27:02,162 | 6J2M  L=111   fold=1.9s  peak=8.7GB  size=162.3MB
+2026-05-19 02:27:04,481 | 1B9O  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:27:08,200 | 4B9F  L=152   fold=3.7s  peak=8.8GB  size=298.8MB
+2026-05-19 02:27:13,652 | 3X2N  L=180   fold=5.4s  peak=8.9GB  size=415.8MB
+2026-05-19 02:27:15,505 | 5SV5  L=105   fold=1.8s  peak=8.7GB  size=145.8MB
+2026-05-19 02:27:19,025 | 6UFV  L=149   fold=3.5s  peak=8.8GB  size=287.5MB
+2026-05-19 02:27:23,509 | 7H0A  L=168   fold=4.5s  peak=8.9GB  size=363.3MB
+2026-05-19 02:27:25,010 | 5QU8  L=58    fold=1.5s  peak=8.6GB  size=47.0MB
+2026-05-19 02:27:27,800 | 6S2S  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:27:29,868 | 9BB0  L=117   fold=2.1s  peak=8.7GB  size=179.7MB
+2026-05-19 02:27:31,925 | 6RYG  L=116   fold=2.1s  peak=8.7GB  size=176.8MB
+2026-05-19 02:27:33,729 | 6NLQ  L=105   fold=1.8s  peak=8.7GB  size=145.8MB
+2026-05-19 02:27:35,468 | 1T3R  L=99    fold=1.7s  peak=8.6GB  size=130.2MB
+2026-05-19 02:27:37,551 | 7QF2  L=117   fold=2.1s  peak=8.7GB  size=179.7MB
+2026-05-19 02:27:39,176 | 4J74  L=86    fold=1.6s  peak=8.6GB  size=99.3MB
+2026-05-19 02:27:42,598 | 9GIR  L=147   fold=3.4s  peak=8.8GB  size=280.0MB
+2026-05-19 02:27:47,424 | 6CWM  L=171   fold=4.8s  peak=8.9GB  size=376.1MB
+2026-05-19 02:27:49,856 | 6JB9  L=128   fold=2.4s  peak=8.7GB  size=213.9MB
+2026-05-19 02:27:52,199 | 6ETM  L=124   fold=2.3s  peak=8.7GB  size=201.1MB
+2026-05-19 02:27:55,955 | 4NYQ  L=153   fold=3.8s  peak=8.8GB  size=302.7MB
+2026-05-19 02:27:57,995 | 6TXW  L=116   fold=2.0s  peak=8.7GB  size=176.8MB
+2026-05-19 02:27:59,543 | 4UR6  L=64    fold=1.5s  peak=8.6GB  size=56.6MB
+2026-05-19 02:28:01,402 | 2EWU  L=107   fold=1.9s  peak=8.6GB  size=151.2MB
+2026-05-19 02:28:02,998 | 5HUB  L=79    fold=1.6s  peak=8.6GB  size=84.5MB
+2026-05-19 02:28:04,835 | 4RQR  L=107   fold=1.8s  peak=8.6GB  size=151.2MB
+2026-05-19 02:28:08,578 | 8OGP  L=153   fold=3.7s  peak=8.8GB  size=302.7MB
+2026-05-19 02:28:12,034 | 5GZD  L=148   fold=3.4s  peak=8.8GB  size=283.7MB
+2026-05-19 02:28:14,367 | 8K75  L=124   fold=2.3s  peak=8.7GB  size=201.1MB
+2026-05-19 02:28:17,693 | 3ZQX  L=146   fold=3.3s  peak=8.8GB  size=276.3MB
+2026-05-19 02:28:19,214 | 4Q2L  L=64    fold=1.5s  peak=8.6GB  size=56.6MB
+2026-05-19 02:28:21,589 | 1OH0  L=125   fold=2.4s  peak=8.7GB  size=204.3MB
+2026-05-19 02:28:23,616 | 1F86  L=115   fold=2.0s  peak=8.7GB  size=173.8MB
+2026-05-19 02:28:25,228 | 4EIE  L=82    fold=1.6s  peak=8.6GB  size=90.7MB
+2026-05-19 02:28:27,238 | 1UZV  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:28:28,710 | 2ERL  L=40    fold=1.5s  peak=8.6GB  size=23.6MB
+2026-05-19 02:28:33,215 | 8B00  L=168   fold=4.5s  peak=8.8GB  size=363.3MB
+2026-05-19 02:28:35,481 | 7FUW  L=122   fold=2.3s  peak=8.7GB  size=194.9MB
+2026-05-19 02:28:37,787 | 1G4I  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:28:39,415 | 4LWU  L=85    fold=1.6s  peak=8.6GB  size=97.1MB
+2026-05-19 02:28:41,219 | 2IDT  L=105   fold=1.8s  peak=8.6GB  size=145.8MB
+2026-05-19 02:28:45,111 | 7LXA  L=157   fold=3.9s  peak=8.8GB  size=318.3MB
+2026-05-19 02:28:46,604 | 1YK4  L=52    fold=1.5s  peak=8.6GB  size=38.3MB
+2026-05-19 02:28:49,405 | 4ZY9  L=133   fold=2.8s  peak=8.7GB  size=230.4MB
+2026-05-19 02:28:51,118 | 9VYU  L=97    fold=1.7s  peak=8.6GB  size=125.2MB
+2026-05-19 02:28:54,120 | 5NLZ  L=138   fold=3.0s  peak=8.7GB  size=247.6MB
+2026-05-19 02:29:00,642 | 2R01  L=195   fold=6.5s  peak=9.0GB  size=486.4MB
+2026-05-19 02:29:02,333 | 1M1R  L=91    fold=1.7s  peak=8.7GB  size=110.7MB
+2026-05-19 02:29:04,403 | 2X2P  L=117   fold=2.1s  peak=8.7GB  size=179.7MB
+2026-05-19 02:29:06,807 | 7MRA  L=126   fold=2.4s  peak=8.7GB  size=207.5MB
+2026-05-19 02:29:08,404 | 5TOG  L=75    fold=1.6s  peak=8.6GB  size=76.5MB
+2026-05-19 02:29:11,696 | 2XOM  L=145   fold=3.3s  peak=8.8GB  size=272.6MB
+2026-05-19 02:29:15,596 | 1P6O  L=156   fold=3.9s  peak=8.8GB  size=314.4MB
+2026-05-19 02:29:18,670 | 3P6D  L=139   fold=3.1s  peak=8.8GB  size=251.1MB
+2026-05-19 02:29:22,337 | 6WFN  L=151   fold=3.7s  peak=8.8GB  size=295.0MB
+2026-05-19 02:29:25,811 | 5YOB  L=148   fold=3.5s  peak=8.8GB  size=283.7MB
+2026-05-19 02:29:27,470 | 8G91  L=89    fold=1.7s  peak=8.6GB  size=106.1MB
+2026-05-19 02:29:31,212 | 4NS2  L=153   fold=3.7s  peak=8.8GB  size=302.7MB
+2026-05-19 02:29:33,477 | 7LWF  L=122   fold=2.3s  peak=8.7GB  size=194.9MB
+2026-05-19 02:29:35,758 | 9REZ  L=122   fold=2.3s  peak=8.7GB  size=194.9MB
+2026-05-19 02:29:37,623 | 5HR2  L=107   fold=1.9s  peak=8.7GB  size=151.2MB
+2026-05-19 02:29:42,513 | 7A6A  L=173   fold=4.9s  peak=8.9GB  size=384.8MB
+2026-05-19 02:29:44,539 | 1RW1  L=114   fold=2.0s  peak=8.7GB  size=170.9MB
+2026-05-19 02:29:46,426 | 4UNU  L=109   fold=1.9s  peak=8.7GB  size=156.7MB
+2026-05-19 02:29:48,521 | 6L2E  L=118   fold=2.1s  peak=8.7GB  size=182.7MB
+2026-05-19 02:29:53,027 | 9E9I  L=168   fold=4.5s  peak=8.9GB  size=363.3MB
+2026-05-19 02:29:57,284 | 1L3K  L=163   fold=4.2s  peak=8.9GB  size=342.5MB
+2026-05-19 02:30:00,255 | 3CR6  L=137   fold=3.0s  peak=8.8GB  size=244.1MB
+2026-05-19 02:30:02,049 | 9TNG  L=103   fold=1.8s  peak=8.7GB  size=140.5MB
+2026-05-19 02:30:03,668 | 9EN7  L=84    fold=1.6s  peak=8.6GB  size=95.0MB
+2026-05-19 02:30:07,979 | 4O8H  L=164   fold=4.3s  peak=8.8GB  size=346.6MB
+2026-05-19 02:30:10,335 | 3EF4  L=124   fold=2.3s  peak=8.7GB  size=201.1MB
+2026-05-19 02:30:13,627 | 1NWW  L=145   fold=3.3s  peak=8.8GB  size=272.6MB
+2026-05-19 02:30:17,430 | 3GMX  L=154   fold=3.8s  peak=8.8GB  size=306.6MB
+2026-05-19 02:30:21,459 | 7LX9  L=160   fold=4.0s  peak=8.8GB  size=330.3MB
+2026-05-19 02:30:23,510 | 8ONB  L=116   fold=2.0s  peak=8.7GB  size=176.8MB
+2026-05-19 02:30:28,570 | 1KT6  L=175   fold=5.1s  peak=8.9GB  size=393.5MB
+2026-05-19 02:30:30,086 | 8F3A  L=45    fold=1.5s  peak=8.6GB  size=29.3MB
+2026-05-19 02:30:35,611 | 6FJO  L=183   fold=5.5s  peak=8.9GB  size=429.5MB
+2026-05-19 02:30:42,138 | 7CSN  L=196   fold=6.5s  peak=9.0GB  size=491.3MB
+2026-05-19 02:30:46,605 | 4DUI  L=165   fold=4.5s  peak=8.9GB  size=350.8MB
+2026-05-19 02:30:48,251 | 3X35  L=87    fold=1.6s  peak=8.6GB  size=101.6MB
+2026-05-19 02:30:50,265 | 3QR7  L=115   fold=2.0s  peak=8.7GB  size=173.8MB
+2026-05-19 02:30:51,773 | 5XX2  L=58    fold=1.5s  peak=8.6GB  size=47.0MB
+2026-05-19 02:30:56,698 | 7N38  L=174   fold=4.9s  peak=8.9GB  size=389.1MB
+2026-05-19 02:30:59,870 | 1CZB  L=141   fold=3.2s  peak=8.8GB  size=258.2MB
+2026-05-19 02:31:02,781 | 9GQP  L=135   fold=2.9s  peak=8.7GB  size=237.2MB
+2026-05-19 02:31:07,118 | 8F85  L=163   fold=4.3s  peak=8.9GB  size=342.5MB
+2026-05-19 02:31:09,240 | 8A4Y  L=118   fold=2.1s  peak=8.7GB  size=182.7MB
+2026-05-19 02:31:16,172 | 8SBN  L=201   fold=6.9s  peak=9.0GB  size=516.2MB
+2026-05-19 02:31:17,775 | 5XQP  L=65    fold=1.6s  peak=8.6GB  size=58.3MB
+2026-05-19 02:31:19,571 | 6ENI  L=104   fold=1.8s  peak=8.6GB  size=143.1MB
+2026-05-19 02:31:21,873 | 2BAX  L=123   fold=2.3s  peak=8.7GB  size=198.0MB
+2026-05-19 02:31:23,823 | 3B64  L=112   fold=1.9s  peak=8.7GB  size=165.2MB
+2026-05-19 02:31:30,224 | 3B5M  L=194   fold=6.4s  peak=9.0GB  size=481.5MB
+2026-05-19 02:31:31,777 | 9Y00  L=53    fold=1.5s  peak=8.6GB  size=39.7MB
+2026-05-19 02:31:34,203 | 4WGZ  L=126   fold=2.4s  peak=8.7GB  size=207.5MB
+2026-05-19 02:31:36,949 | 7FX1  L=131   fold=2.7s  peak=8.7GB  size=223.8MB
+2026-05-19 02:31:39,806 | 8WT3  L=134   fold=2.9s  peak=8.7GB  size=233.8MB
+2026-05-19 02:31:47,142 | 1BS9  L=207   fold=7.3s  peak=9.1GB  size=546.9MB
+2026-05-19 02:31:48,911 | 29KI  L=100   fold=1.8s  peak=8.7GB  size=132.7MB
+2026-05-19 02:31:53,474 | 2X25  L=168   fold=4.6s  peak=8.9GB  size=363.3MB
+2026-05-19 02:31:55,004 | 7ZVH  L=57    fold=1.5s  peak=8.6GB  size=45.5MB
+2026-05-19 02:31:58,009 | 3OHE  L=137   fold=3.0s  peak=8.7GB  size=244.1MB
+2026-05-19 02:31:58,013 | Done: 299 newly cached, 1 already present

@@ -1,0 +1,286 @@
+[2026-05-19T12:32:11+00:00] resume replication at stage 3
+[2026-05-19T12:32:11+00:00] stage 3 pq_signature
+2026-05-19 12:32:16,815 | Val proteins (60): ['5F66', '6BQA', '5D14', '4HDP', '4J74', '1NPI', '8F85', '4DUI', '5O7U', '2ZVX', '7IJT', '7AVP', '4C9X', '4WGZ', '9VYU', '4XPY', '7G01', '2X46', '7H16', '2EWU', '7LF3', '7HLT', '7NZC', '2RHF', '3RJ6', '8CHR', '7W70', '8I1F', '4NI6', '3OHE', '8WT3', '5QI7', '4RXN', '6JK4', '2VI1', '4L9D', '7CSN', '5XQP', '4NYQ', '7FX1', '3B5M', '7X44', '3I6O', '9PIS', '8ONB', '5B5F', '1T3R', '6AIQ', '5BTY', '7ZAA', '2O9S', '1CZB', '3U8I', '8CRK', '7H0O', '5SV5', '1L3K', '3ZQX', '7FYP', '6XVM']
+2026-05-19 12:32:17,816 | Loaded 60 proteins
+2026-05-19 12:32:17,816 | Computing (p_eff, q_eff) per block per protein…
+2026-05-19 12:32:31,732 | 
+=== Per-block (p_eff, q_eff) at selected blocks (mean ± std over val proteins) ===
+2026-05-19 12:32:31,732 |  block        p_eff        q_eff    q_eff/p_eff
+2026-05-19 12:32:31,732 |      0    55.4±21.1    55.0±20.9         0.992
+2026-05-19 12:32:31,732 |      5    49.4±17.3    66.9±24.7         1.354
+2026-05-19 12:32:31,732 |     10    54.1±20.3    62.5±21.9         1.156
+2026-05-19 12:32:31,732 |     15    62.0±21.8    54.5±20.1         0.880
+2026-05-19 12:32:31,733 |     20    70.6±24.2    44.7±16.4         0.633
+2026-05-19 12:32:31,733 |     22    64.8±23.4    51.7±18.2         0.797
+2026-05-19 12:32:31,733 |     25    62.0±21.9    54.8±20.0         0.884
+2026-05-19 12:32:31,733 |     28    58.8±20.5    56.8±20.3         0.967
+2026-05-19 12:32:31,733 |     30    57.6±20.5    56.5±20.1         0.981
+2026-05-19 12:32:31,733 |     32    51.6±16.0    51.6±16.1         1.000
+2026-05-19 12:32:31,733 |     35    55.6±18.4    55.4±18.3         0.996
+2026-05-19 12:32:31,733 |     40    39.6±9.4     45.6±12.5         1.151
+2026-05-19 12:32:31,733 |     43    26.8±8.6     23.8±8.8          0.886
+2026-05-19 12:32:31,733 |     44    25.9±9.2     21.3±8.0          0.821
+2026-05-19 12:32:31,734 |     45    26.6±10.0    22.1±8.7          0.829
+2026-05-19 12:32:31,734 |     46    26.8±10.3    21.9±9.3          0.819
+2026-05-19 12:32:31,734 |     47    27.4±10.2    23.3±9.3          0.851
+2026-05-19 12:32:31,734 | 
+Direct pseudo-Euclidean fit at selected blocks…
+2026-05-19 12:32:32,199 |   block   0: q=0:2.049  q=1:1.790  q=2:1.594  q=4:1.283  q=8:0.820  q=16:0.532  q=32:1.178  q=64:1.682
+2026-05-19 12:32:32,671 |   block  15: q=0:0.584  q=1:0.606  q=2:0.627  q=4:0.668  q=8:0.743  q=16:0.864  q=32:1.006  q=64:1.095
+2026-05-19 12:32:33,146 |   block  25: q=0:0.800  q=1:0.686  q=2:0.594  q=4:0.461  q=8:0.367  q=16:0.495  q=32:0.875  q=64:1.151
+2026-05-19 12:32:33,619 |   block  35: q=0:1.058  q=1:0.942  q=2:0.841  q=4:0.677  q=8:0.439  q=16:0.271  q=32:0.590  q=64:0.840
+2026-05-19 12:32:34,081 |   block  43: q=0:0.150  q=1:0.126  q=2:0.107  q=4:0.080  q=8:0.048  q=16:0.043  q=32:0.081  q=64:0.106
+2026-05-19 12:32:34,542 |   block  47: q=0:0.129  q=1:0.111  q=2:0.096  q=4:0.071  q=8:0.041  q=16:0.040  q=32:0.075  q=64:0.096
+2026-05-19 12:32:34,543 | 
+q_eff vs L correlation per block (sharper version of §5.4):
+2026-05-19 12:32:35,744 |   block  5  r(L, q_eff) = +0.998
+2026-05-19 12:32:35,744 |   block 15  r(L, q_eff) = +0.994
+2026-05-19 12:32:35,744 |   block 22  r(L, q_eff) = +0.998
+2026-05-19 12:32:35,745 |   block 25  r(L, q_eff) = +0.999
+2026-05-19 12:32:35,745 |   block 30  r(L, q_eff) = +0.998
+2026-05-19 12:32:35,745 |   block 35  r(L, q_eff) = +0.995
+2026-05-19 12:32:35,745 |   block 43  r(L, q_eff) = +0.734
+2026-05-19 12:32:35,745 |   block 47  r(L, q_eff) = +0.910
+2026-05-19 12:32:35,749 | Wrote runs/pq_signature_summary.json
+2026-05-19 12:32:36,335 | saved runs/pq_signature_headline.png
+2026-05-19 12:32:36,781 | saved runs/pq_fit_quality.png
+[2026-05-19T12:32:38+00:00] stage 4 signed_vs_psd_descriptive
+2026-05-19 12:32:41,374 | Val proteins (60): ['5F66', '6BQA', '5D14', '4HDP', '4J74', '1NPI', '8F85', '4DUI', '5O7U', '2ZVX', '7IJT', '7AVP', '4C9X', '4WGZ', '9VYU', '4XPY', '7G01', '2X46', '7H16', '2EWU', '7LF3', '7HLT', '7NZC', '2RHF', '3RJ6', '8CHR', '7W70', '8I1F', '4NI6', '3OHE', '8WT3', '5QI7', '4RXN', '6JK4', '2VI1', '4L9D', '7CSN', '5XQP', '4NYQ', '7FX1', '3B5M', '7X44', '3I6O', '9PIS', '8ONB', '5B5F', '1T3R', '6AIQ', '5BTY', '7ZAA', '2O9S', '1CZB', '3U8I', '8CRK', '7H0O', '5SV5', '1L3K', '3ZQX', '7FYP', '6XVM']
+2026-05-19 12:32:41,530 | Loaded 60 distogram files
+2026-05-19 12:33:53,305 | Wrote /home/williamklett/psa/runs/signed_vs_psd_compression.json
+2026-05-19 12:33:53,305 | 
+Rank 3:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.823 psd_pos=0.799 psd_flip=0.804 adv_flip=-0.019
+2026-05-19 12:33:53,305 |   b09 q=61.4 signed=0.851 psd_pos=0.827 psd_flip=0.830 adv_flip=-0.021
+2026-05-19 12:33:53,305 |   b15 q=54.5 signed=0.887 psd_pos=0.875 psd_flip=0.877 adv_flip=-0.010
+2026-05-19 12:33:53,305 |   b20 q=44.7 signed=0.776 psd_pos=0.776 psd_flip=0.776 adv_flip=0.000
+2026-05-19 12:33:53,305 |   b25 q=54.8 signed=0.807 psd_pos=0.676 psd_flip=0.712 adv_flip=-0.095
+2026-05-19 12:33:53,305 |   b30 q=56.5 signed=0.593 psd_pos=0.590 psd_flip=0.592 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b35 q=55.4 signed=0.556 psd_pos=0.554 psd_flip=0.555 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b40 q=45.6 signed=0.402 psd_pos=0.399 psd_flip=0.401 adv_flip=-0.001
+2026-05-19 12:33:53,305 |   b43 q=23.8 signed=0.335 psd_pos=0.335 psd_flip=0.335 adv_flip=0.000
+2026-05-19 12:33:53,305 |   b47 q=23.3 signed=0.342 psd_pos=0.342 psd_flip=0.342 adv_flip=0.000
+2026-05-19 12:33:53,305 |   corr(q_eff, signed advantage over psd_flip): r=-0.295 p=0.042
+2026-05-19 12:33:53,305 | 
+Rank 8:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.723 psd_pos=0.602 psd_flip=0.636 adv_flip=-0.086
+2026-05-19 12:33:53,305 |   b09 q=61.4 signed=0.757 psd_pos=0.641 psd_flip=0.669 adv_flip=-0.088
+2026-05-19 12:33:53,305 |   b15 q=54.5 signed=0.797 psd_pos=0.732 psd_flip=0.742 adv_flip=-0.056
+2026-05-19 12:33:53,305 |   b20 q=44.7 signed=0.569 psd_pos=0.567 psd_flip=0.569 adv_flip=-0.000
+2026-05-19 12:33:53,305 |   b25 q=54.8 signed=0.633 psd_pos=0.519 psd_flip=0.666 adv_flip=0.033
+2026-05-19 12:33:53,305 |   b30 q=56.5 signed=0.502 psd_pos=0.626 psd_flip=0.705 adv_flip=0.203
+2026-05-19 12:33:53,305 |   b35 q=55.4 signed=0.505 psd_pos=0.636 psd_flip=0.710 adv_flip=0.204
+2026-05-19 12:33:53,305 |   b40 q=45.6 signed=0.253 psd_pos=0.364 psd_flip=0.432 adv_flip=0.179
+2026-05-19 12:33:53,305 |   b43 q=23.8 signed=0.087 psd_pos=0.105 psd_flip=0.123 adv_flip=0.036
+2026-05-19 12:33:53,305 |   b47 q=23.3 signed=0.088 psd_pos=0.097 psd_flip=0.107 adv_flip=0.020
+2026-05-19 12:33:53,305 |   corr(q_eff, signed advantage over psd_flip): r=+0.024 p=0.87
+2026-05-19 12:33:53,305 | 
+Rank 16:
+2026-05-19 12:33:53,305 |   b05 q=66.9 signed=0.700 psd_pos=0.435 psd_flip=0.557 adv_flip=-0.143
+2026-05-19 12:33:53,306 |   b09 q=61.4 signed=0.725 psd_pos=0.468 psd_flip=0.567 adv_flip=-0.157
+2026-05-19 12:33:53,306 |   b15 q=54.5 signed=0.749 psd_pos=0.580 psd_flip=0.607 adv_flip=-0.142
+2026-05-19 12:33:53,306 |   b20 q=44.7 signed=0.378 psd_pos=0.380 psd_flip=0.404 adv_flip=0.026
+2026-05-19 12:33:53,306 |   b25 q=54.8 signed=0.420 psd_pos=0.800 psd_flip=1.074 adv_flip=0.654
+2026-05-19 12:33:53,306 |   b30 q=56.5 signed=0.408 psd_pos=1.050 psd_flip=1.334 adv_flip=0.927
+2026-05-19 12:33:53,306 |   b35 q=55.4 signed=0.408 psd_pos=1.058 psd_flip=1.317 adv_flip=0.909
+2026-05-19 12:33:53,306 |   b40 q=45.6 signed=0.194 psd_pos=0.606 psd_flip=0.835 adv_flip=0.641
+2026-05-19 12:33:53,306 |   b43 q=23.8 signed=0.057 psd_pos=0.150 psd_flip=0.212 adv_flip=0.155
+2026-05-19 12:33:53,306 |   b47 q=23.3 signed=0.051 psd_pos=0.129 psd_flip=0.182 adv_flip=0.131
+2026-05-19 12:33:53,306 |   corr(q_eff, signed advantage over psd_flip): r=+0.116 p=0.43
+2026-05-19 12:33:53,306 | 
+Rank 32:
+2026-05-19 12:33:53,306 |   b05 q=66.9 signed=0.772 psd_pos=0.362 psd_flip=0.701 adv_flip=-0.071
+2026-05-19 12:33:53,306 |   b09 q=61.4 signed=0.767 psd_pos=0.359 psd_flip=0.637 adv_flip=-0.129
+2026-05-19 12:33:53,306 |   b15 q=54.5 signed=0.734 psd_pos=0.420 psd_flip=0.502 adv_flip=-0.232
+2026-05-19 12:33:53,306 |   b20 q=44.7 signed=0.220 psd_pos=0.334 psd_flip=0.455 adv_flip=0.235
+2026-05-19 12:33:53,306 |   b25 q=54.8 signed=0.297 psd_pos=1.340 psd_flip=1.882 adv_flip=1.585
+2026-05-19 12:33:53,306 |   b30 q=56.5 signed=0.256 psd_pos=1.517 psd_flip=2.161 adv_flip=1.906
+2026-05-19 12:33:53,306 |   b35 q=55.4 signed=0.260 psd_pos=1.529 psd_flip=2.174 adv_flip=1.914
+2026-05-19 12:33:53,306 |   b40 q=45.6 signed=0.115 psd_pos=0.767 psd_flip=1.251 adv_flip=1.136
+2026-05-19 12:33:53,306 |   b43 q=23.8 signed=0.035 psd_pos=0.199 psd_flip=0.324 adv_flip=0.289
+2026-05-19 12:33:53,306 |   b47 q=23.3 signed=0.033 psd_pos=0.174 psd_flip=0.284 adv_flip=0.252
+2026-05-19 12:33:53,306 |   corr(q_eff, signed advantage over psd_flip): r=+0.173 p=0.24
+2026-05-19 12:33:54,961 | saved /home/williamklett/psa/runs/signed_vs_psd_compression.png
+[2026-05-19T12:33:55+00:00] stage 5 signature_projection_grid
+2026-05-19 12:34:03,157 | Val proteins (60): ['5F66', '6BQA', '5D14', '4HDP', '4J74', '1NPI', '8F85', '4DUI', '5O7U', '2ZVX']
+2026-05-19 12:34:03,417 | Loading ESMFold...
+2026-05-19 12:34:03,579 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 12:34:03,596 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 12:34:03,691 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-19 12:34:03,708 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-19 12:34:03,761 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-19 12:34:03,813 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-19 12:34:03,870 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 12:34:03,871 | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-19 12:34:03,887 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/esmfold_v1/75a3841ee059df2bf4d56688166c8fb459ddd97a/config.json "HTTP/1.1 200 OK"
+2026-05-19 12:34:03,979 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-19 12:34:04,028 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 12:34:04,091 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-05-19 12:34:04,143 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-19 12:34:04,223 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1 "HTTP/1.1 200 OK"
+2026-05-19 12:34:04,291 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/main "HTTP/1.1 200 OK"
+2026-05-19 12:34:04,355 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-19 12:34:04,415 | HTTP Request: GET https://huggingface.co/api/models/facebook/esmfold_v1/commits/refs%2Fpr%2F6 "HTTP/1.1 200 OK"
+2026-05-19 12:34:04,462 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-19 12:34:04,512 | HTTP Request: HEAD https://huggingface.co/facebook/esmfold_v1/resolve/refs%2Fpr%2F6/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:25<1:47:01,  1.43s/it]Loading weights:  13%|█▎        | 566/4498 [00:26<02:10, 30.19it/s] Loading weights:  15%|█▍        | 674/4498 [00:26<01:42, 37.32it/s]Loading weights:  68%|██████▊   | 3060/4498 [00:26<00:04, 288.42it/s]Loading weights: 100%|██████████| 4498/4498 [00:26<00:00, 167.33it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.bias   | MISSING | 
+esm.contact_head.regression.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2026-05-19 12:34:52,736 | Loaded in 49.3s
+2026-05-19 12:34:52,749 | Resuming from /home/williamklett/psa/runs/signature_projection_grid_n300.json with 3420 existing rows
+2026-05-19 12:34:52,750 | 
+== baseline == already complete (n=60); skipping
+2026-05-19 12:34:52,750 | 
+== signed_abs_block5_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,750 | 
+== psd_abs_flip_block5_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,751 | 
+== psd_pos_block5_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,751 | 
+== signed_abs_block9_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,751 | 
+== psd_abs_flip_block9_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,751 | 
+== psd_pos_block9_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,752 | 
+== signed_abs_block13_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,752 | 
+== psd_abs_flip_block13_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,752 | 
+== psd_pos_block13_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,753 | 
+== signed_abs_block17_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,753 | 
+== psd_abs_flip_block17_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,753 | 
+== psd_pos_block17_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,753 | 
+== signed_abs_block21_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,754 | 
+== psd_abs_flip_block21_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,754 | 
+== psd_pos_block21_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,754 | 
+== signed_abs_block25_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,754 | 
+== psd_abs_flip_block25_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,755 | 
+== psd_pos_block25_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,755 | 
+== signed_abs_block29_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,755 | 
+== psd_abs_flip_block29_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,756 | 
+== psd_pos_block29_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,756 | 
+== signed_abs_block33_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,756 | 
+== psd_abs_flip_block33_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,756 | 
+== psd_pos_block33_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,757 | 
+== signed_abs_block35_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,757 | 
+== psd_abs_flip_block35_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,757 | 
+== psd_pos_block35_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,758 | 
+== signed_abs_block39_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,758 | 
+== psd_abs_flip_block39_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,758 | 
+== psd_pos_block39_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,758 | 
+== signed_abs_block43_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,759 | 
+== psd_abs_flip_block43_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,759 | 
+== psd_pos_block43_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,759 | 
+== signed_abs_block47_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,759 | 
+== psd_abs_flip_block47_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,760 | 
+== psd_pos_block47_rank8 == already complete (n=60); skipping
+2026-05-19 12:34:52,760 | 
+== signed_abs_block5_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,760 | 
+== psd_abs_flip_block5_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,761 | 
+== psd_pos_block5_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,761 | 
+== signed_abs_block9_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,761 | 
+== psd_abs_flip_block9_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,761 | 
+== psd_pos_block9_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,762 | 
+== signed_abs_block13_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,762 | 
+== psd_abs_flip_block13_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,762 | 
+== psd_pos_block13_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,763 | 
+== signed_abs_block17_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,763 | 
+== psd_abs_flip_block17_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,763 | 
+== psd_pos_block17_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,763 | 
+== signed_abs_block21_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,764 | 
+== psd_abs_flip_block21_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,764 | 
+== psd_pos_block21_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,764 | 
+== signed_abs_block25_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,764 | 
+== psd_abs_flip_block25_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,765 | 
+== psd_pos_block25_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,765 | 
+== signed_abs_block29_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,765 | 
+== psd_abs_flip_block29_rank16 == already complete (n=60); skipping
+2026-05-19 12:34:52,766 | 
+== psd_pos_block29_rank16 ==
+2026-05-19 12:38:19,951 |   summary | MAE=11.485 Å pLDDT=0.317 n=60
+2026-05-19 12:38:19,998 | 
+== signed_abs_block33_rank16 ==
+2026-05-19 12:41:49,009 |   summary | MAE=2.371 Å pLDDT=0.359 n=60
+2026-05-19 12:41:49,056 | 
+== psd_abs_flip_block33_rank16 ==
+2026-05-19 12:45:18,392 |   summary | MAE=14.154 Å pLDDT=0.418 n=60
+2026-05-19 12:45:18,439 | 
+== psd_pos_block33_rank16 ==
+2026-05-19 12:48:47,794 |   summary | MAE=9.533 Å pLDDT=0.338 n=60
+2026-05-19 12:48:47,842 | 
+== signed_abs_block35_rank16 ==
+2026-05-19 12:52:16,969 |   summary | MAE=1.671 Å pLDDT=0.462 n=60
+2026-05-19 12:52:17,017 | 
+== psd_abs_flip_block35_rank16 ==
+2026-05-19 12:55:46,179 |   summary | MAE=14.950 Å pLDDT=0.451 n=60
+2026-05-19 12:55:46,228 | 
+== psd_pos_block35_rank16 ==
+2026-05-19 12:59:15,334 |   summary | MAE=12.153 Å pLDDT=0.321 n=60
+2026-05-19 12:59:15,384 | 
+== signed_abs_block39_rank16 ==
+2026-05-19 13:02:44,483 |   summary | MAE=1.339 Å pLDDT=0.606 n=60
+2026-05-19 13:02:44,533 | 
+== psd_abs_flip_block39_rank16 ==
+2026-05-19 13:06:14,162 |   summary | MAE=11.987 Å pLDDT=0.523 n=60
+2026-05-19 13:06:14,214 | 
+== psd_pos_block39_rank16 ==
+2026-05-19 13:09:46,348 |   summary | MAE=5.889 Å pLDDT=0.357 n=60
+2026-05-19 13:09:46,400 | 
+== signed_abs_block43_rank16 ==
+2026-05-19 13:13:19,701 |   summary | MAE=1.239 Å pLDDT=0.562 n=60
+2026-05-19 13:13:19,757 | 
+== psd_abs_flip_block43_rank16 ==

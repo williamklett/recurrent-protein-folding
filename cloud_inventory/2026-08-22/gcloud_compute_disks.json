@@ -1,0 +1,24 @@
+[
+  {
+    "creationTimestamp": "2026-06-10T06:42:39.219-07:00",
+    "name": "kalshi-wt-micro",
+    "sizeGb": "10",
+    "status": "READY",
+    "type": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-west1-a/diskTypes/pd-standard",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-west1-a/instances/kalshi-wt-micro"
+    ],
+    "zone": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-west1-a"
+  },
+  {
+    "creationTimestamp": "2026-07-26T14:09:09.316-07:00",
+    "name": "kalshi-east",
+    "sizeGb": "20",
+    "status": "READY",
+    "type": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-east4-a/diskTypes/pd-standard",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-east4-a/instances/kalshi-east"
+    ],
+    "zone": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-east4-a"
+  }
+]

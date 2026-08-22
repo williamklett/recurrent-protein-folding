@@ -1,0 +1,161 @@
+{
+  "_comment": "Test set for the overnight convergence-vs-pLDDT benchmark. Heavy weight on KNOWN failures because that is the discriminating class. Each entry: name, sequence, gt_pdb_path (relative to repo root), gt_chain, expected_class, notes.",
+
+  "_selection_criteria": [
+    "1. Sequence length 50-600 residues (fits L4 GPU memory)",
+    "2. Single chain protein (no large oligomers)",
+    "3. Ground-truth structure publicly available",
+    "4. Mix of fold classes (alpha, beta, alpha/beta)",
+    "5. Expected outcome documented in CASP15 results or literature",
+    "6. Weighted ~2:1 in favor of failures vs successes"
+  ],
+
+  "anchor_controls_known_success": [
+    {
+      "name": "1AO6",
+      "sequence": "",
+      "gt_pdb": "data/1AO6.pdb",
+      "gt_chain": "A",
+      "expected_class": "success",
+      "notes": "albumin 578 res; already have layerwise data; positive control"
+    },
+    {
+      "name": "7ACN",
+      "sequence": "",
+      "gt_pdb": "data/pdb_targets/7acn.pdb",
+      "gt_chain": "A",
+      "expected_class": "success",
+      "notes": "aconitase 753 res; already have data"
+    },
+    {
+      "name": "8FMI",
+      "sequence": "GMTEYKLVVVGAGGVGKSALTIQLIQNHFVDEYDPTIEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTGEGFLCVFAINNTKSFEDIHHYREQIKRVKDSEDVPMVLVGNKSDLPSRTVDTKQAQDLARSYGIPFIETSAKTRQGVDDAFYTLVREIRKHKEK",
+      "gt_pdb": "data/8FMI.pdb",
+      "gt_chain": "A",
+      "expected_class": "success",
+      "notes": "KRas GTPase 170 res; already have data"
+    },
+    {
+      "name": "1UBQ",
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+      "gt_pdb_url": "https://files.rcsb.org/download/1UBQ.pdb",
+      "gt_chain": "A",
+      "expected_class": "success",
+      "notes": "ubiquitin 76 res; canonical easy fold (beta-grasp); pLDDT will be high"
+    },
+    {
+      "name": "1MBN",
+      "sequence": "VLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGNFGADAQGAMNKALELFRKDIAAKYKELGYQG",
+      "gt_pdb_url": "https://files.rcsb.org/download/1MBN.pdb",
+      "gt_chain": "A",
+      "expected_class": "success",
+      "notes": "sperm whale myoglobin 153 res; canonical alpha-helical bundle"
+    }
+  ],
+
+  "known_failures_casp15_T1137_family": [
+    {
+      "name": "T1137s4",
+      "sequence": "LTNTTVTAYFPEVLALYPGDKVLIMGVRVGSIDSIETAGDKMKVVFHFNNKYKVPENATASILNPSLVASRVIQLSPPYTGGPTLRDGAVLDVDRTQVPIEYDEVRNQVTRLLADLGPTPEQPKGPFGDIIESFADGFAGKGEQLNRTLRGLSDALTALNEGRGDFFAVVKSLALFVNALHRSDQQFVALNNDLAQFTNSFTNTDQELANALQDLNRVLKTTREFLDRNGGVLTHDIDNLEQVTTAILQPEPRDGLETGLHAYPNLAANVLNINSPNQGGIIGLPVLPGVTNFSNPLQFVCSSIQAGSRLGYQESAELCAQYLAPIMDAIKFNYLPFGMNLASTAMTLPKQIAYSEKRLQPPPGYKDTTVPGIWSRDTLFSHGNHEPGWIVAPGMQGVQVQPATANMLTPESLAELLGGPDIVPP",
+      "gt_pdb": "data/casp15/T1137/T1137s4.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "shallow MSA failure; already have data; pLDDT=0.45, RMSD=78A"
+    },
+    {
+      "name": "T1137s6",
+      "sequence": "",
+      "gt_pdb": "data/casp15/T1137/T1137s6.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "novel topology failure; already have data; pLDDT=0.70 (MISLEADING), RMSD=88A"
+    },
+    {
+      "name": "T1137s7",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1137s7",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1137/T1137s7.pdb",
+      "gt_chain": " ",
+      "expected_class": "likely_failure",
+      "notes": "same family as known failures s4/s6; likely shares failure characteristics"
+    },
+    {
+      "name": "T1137s8",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1137s8",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1137/T1137s8.pdb",
+      "gt_chain": " ",
+      "expected_class": "likely_failure",
+      "notes": "same family"
+    },
+    {
+      "name": "T1137s9",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1137s9",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1137/T1137s9.pdb",
+      "gt_chain": " ",
+      "expected_class": "likely_failure",
+      "notes": "same family"
+    }
+  ],
+
+  "known_failures_casp15_other": [
+    {
+      "name": "T1106s1",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1106s1",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1106/T1106s1.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "CASP15 FM target with documented low ESMFold score"
+    },
+    {
+      "name": "T1106s2",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1106s2",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1106/T1106s2.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "CASP15 FM"
+    },
+    {
+      "name": "T1124",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1124",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1124/T1124.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "novel fold CASP15 FM target"
+    },
+    {
+      "name": "T1170",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1170",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1170/T1170.pdb",
+      "gt_chain": " ",
+      "expected_class": "failure",
+      "notes": "CASP15 FM with ESMFold pLDDT < 0.5"
+    }
+  ],
+
+  "intermediate_cases_casp15": [
+    {
+      "name": "T1132",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1132",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1132/T1132.pdb",
+      "gt_chain": " ",
+      "expected_class": "intermediate",
+      "notes": "CASP15 mid-difficulty; should land between successes and failures"
+    },
+    {
+      "name": "T1184",
+      "_source": "https://predictioncenter.org/casp15/target.cgi?id=T1184",
+      "sequence": "<DOWNLOAD_FROM_CASP15>",
+      "gt_pdb": "data/casp15/T1184/T1184.pdb",
+      "gt_chain": " ",
+      "expected_class": "intermediate",
+      "notes": "mid difficulty FM"
+    }
+  ]
+}

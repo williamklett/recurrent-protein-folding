@@ -1,0 +1,41 @@
+Only in .: .gitignore
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: all_activation_paths.txt
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: benchmark_overnight.local.log
+Only in .: data
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: eval_vm_60.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: ood500_manifest.jsonl
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: ood500_manifest.tsv
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: ood500_pdbs
+Only in .: paper
+Only in .: paper_draft.md
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: paper_figs
+Files ./pyproject.toml and cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/pyproject.toml differ
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: residual_analysis.log
+Only in .: runs
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: _analyze_mae.py
+Only in ./scripts: analyze_all_possible.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: belief_gd.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: belief_gd_clean.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: belief_gd_dim.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: belief_gd_dim_bigN.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: belief_manifold.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: code_correction.py
+Files ./scripts/compare_500_metrics.py and cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts/compare_500_metrics.py differ
+Files ./scripts/cosine_alignment_backprop.py and cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts/cosine_alignment_backprop.py differ
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: cosine_natural_grad.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: decoder_inversion.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: decouple_allfolds.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: energy_decomp.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: energy_traj.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: eval_l45_vs_new_l46.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: fit_transport.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: inspect_head.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: make_paper_figs.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: meaning_drift.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: min_interatomic_distance.py
+Only in ./scripts: plot_auroc_by_population.py
+Only in ./scripts: plot_paper_figures.py
+Only in ./scripts: sweep_sigma_robustness.py
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/scripts: transport_fidelity.py
+Files ./uv.lock and cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding/uv.lock differ
+Only in cloud_inventory/2026-08-22/extracted/esmfold/recurrent-protein-folding: vm_60_consistent.json

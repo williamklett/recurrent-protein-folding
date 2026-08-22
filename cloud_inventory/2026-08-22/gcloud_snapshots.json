@@ -1,0 +1,26 @@
+[
+  {
+    "creationTimestamp": "2026-06-10T06:38:47.240-07:00",
+    "diskSizeGb": "200",
+    "name": "esmfold-archive-jun10",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-west1-a/disks/esmfold-l4-probes",
+    "status": "READY",
+    "storageBytes": "52810996736"
+  },
+  {
+    "creationTimestamp": "2026-05-19T09:49:43.753-07:00",
+    "diskSizeGb": "200",
+    "name": "psa-l4-ondemand-inspect-20260519-124941",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-west1-a/disks/psa-l4-ondemand",
+    "status": "READY",
+    "storageBytes": "114596792640"
+  },
+  {
+    "creationTimestamp": "2026-05-19T06:23:07.707-07:00",
+    "diskSizeGb": "200",
+    "name": "psa-l4-repl-20260519-092306",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/rugged-weaver-406003/zones/us-central1-a/disks/psa-l4",
+    "status": "READY",
+    "storageBytes": "114556171456"
+  }
+]
