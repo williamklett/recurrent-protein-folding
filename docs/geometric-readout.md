@@ -1,0 +1,33 @@
+# A geometric readout of the ESMFold trunk
+
+A brief write up / explanation:
+
+The architectures of ML protein predictors have two phases. The first, MSA search on alphafold and the protein LM on ESMfold, has the job of encoding pairwise coevolution data. A rough intuition: co-evolution tells you whether one residue is important for the other’s function, indicating they are close to each other in space. The second phase is more mysterious; if co-evolution encodes constraints, the ESMfold trunk and (multiple architectures throughout alphafold’s history) solves those constraints.
+
+The mech interp literature on phase two is sparse, and not super helpful. It focuses on what the model is thinking about—what content is decodable from an internal representation, and is the province of linear probes and sparse autoencoders (Simon & Zou, 2025; Parsan et al., 2025; Gujral et al., 2025; Adams et al., 2025; Lu et al., 2026); these establish that geometric content is linearly present in the trunk and sharpens with depth, but not what the model’s belief at a given layer is.
+
+Although it can be helpful to know that the model is thinking about an alpha-helix, it is not sufficient towards understanding the process that the model actually implements. The only attempts at this are more illustrative than rigorous. The simplest route is the folding analogue of the logit lens (nostalgebraist, 2020): read an intermediate state by applying the model’s own output head to it. As in language models, the head is biased because intermediate layers may use a basis it does not expect. Li et al. (2026) makes exactly this move, applying OpenFold’s (Ahdritz et al., 2024) distogram head to intermediate Evoformer layers, and the same pathology appears: the implied distance maps violate the triangle inequality across a wide mid-trunk band (an “M”-shaped violation curve). The alternative is to train a structure module per block against true structure (Jumper et al., 2021). This avoids the OOD problem but measures downstream sufficiency (how recoverable the answer is from layer t) not what t represents.
+
+The goal here is to observe the folding [pseudo?]1dynamics that take place in the trunk. How does the representation of the protein change throughout?
+
+I trained a new kind of probe which I will claim is “faithful” to the actual geometric content of an internal layer in the ESMFold trunk; that is, encode the model’s “belief” at that layer. I define the model’s geometric belief at layer t as the distance distribution that best reconstructs z_t. Two design challenges follow, somewhat in tension: the probe must reconstruct z_t, yet its bottleneck must encode geometric information rather than a generic code. We should not expect the best reconstruction bottleneck to be a purely geometric one.
+
+Good news: the most naive idea seems to work here! All you need is a two term loss function that enforces physicality and reconstruction-ability. For each layer I trained a per-pair distogram autoencoder (pair dimension 128, 64 distance bins, hidden width 256): z[i, j] → bottleneck distogram → reconstruct z[i, j]. The loss has two terms reflecting the dual constraints of faithfulness: per-pair reconstruction MSE and a KL term anchoring the distribution at layer n to the one at n + 1. We train sequentially from the last hidden layer back to the first, so each layer’s belief is free to drift further from the output anchor.
+
+Some intuition for why this works: 1. The actual model output is definitely physical. The KL penalty tells each probe to output something relatively close to the probe in front of it—meaning as you go back towards the first layer, the representation can get less close to the model output. This works only because, as previous work has shown, the geometric representations are slowly refined, as opposed to rapidly changed. 2. What changes between layers, the loss not enforced by KL, maximizes the reconstruction-ability (the faithfulness to that layer).
+
+This gives us a natural way to see if the training worked. Either the changes enforced by reconstruction encoded non-geometric information, or they tuned the basis of each probe to read out the geometric content of each layer. If the former is true, then we would see the outputs of the probes get less and less metric as we move further from the last layer; a generic code slowly dominates the information content of the bottleneck. If the latter is right, and the best way to reconstruct was just to be faithful, then the outputs stay geometric—triangle violations do not accumulate, and embedding stress stays flat.
+
+The evidence unequivocally supports the latter hypothesis (that it works!). Below, we see metricity holds as an emergent quality under reconstruction loss. The figure below shows that a probe outputting a low TM score (it is further from the fold and less constrained by the KL term), has no bearing on whether its content stays geometric.
+
+
+![Decoded intermediate geometry across ESMFold layers](../paper/figures/mlcb_readme_figure1.png)
+
+![Triangle-inequality violations across model depth](../paper/figures/mlcb_readme_figure2.png)
+
+## Animations
+
+Fixed-camera MDS views of decoded probe distance maps, interpolated between layers.
+
+- [T1137s4 — watch or download](https://williamklett.github.io/static/media/t1137s4.mp4)
+- [8FMI — watch or download](https://williamklett.github.io/static/media/8fmi.mp4)

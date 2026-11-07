@@ -1,3 +1,7 @@
+# Geometric ESMFold probe
+
+[Write-up](docs/geometric-readout.md) · [Layer-by-layer animations](https://williamklett.github.io/#esm-probe)
+
 A brief write up / explanation:
 
 The architectures of ML protein predictors have two phases. The first, MSA search on alphafold and the protein LM on ESMfold, has the job of encoding pairwise coevolution data. A rough intuition: co-evolution tells you whether one residue is important for the other’s function, indicating they are close to each other in space. The second phase is more mysterious; if co-evolution encodes constraints, the ESMfold trunk and (multiple architectures throughout alphafold’s history) solves those constraints.
